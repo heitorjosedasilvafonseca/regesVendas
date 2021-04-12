@@ -1,0 +1,34 @@
+﻿@model Vendas.Models.Vendedores
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div>
+    <h4>@Html.DisplayFor(model => model.Nome)</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Celular)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Celular)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.email)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ValorMeta)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ValorMeta)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.VendedoresId">Editar</a> |
+    <a asp-action="Index">Voltar</a>
+</div>

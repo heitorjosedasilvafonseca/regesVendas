@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <img src="~/images/logo.jpg" width="90" height="30" />
+    <h4>Bem vindos</h4>
+    <p>Clique para conhecer <a href="https://reges.com.br/ribeiraopreto/">FACULDADES REGES</a>.</p>
+
+    <div class="row">
+        <div class="col-2">
+            <nav class="nav flex-column">
+                <a class="navbar-link active" asp-controller="Vendedores" asp-action="Index">
+                    <img src="~/images/vendedores.png" width="30" height="30" />
+                    Vendedores
+                </a>
+                <br />
+                <a class="navbar-link" asp-controller="Clientes" asp-action="Index">
+                    <img src="~/images/clientes.png" width="30" height="30" />
+                    Clientes
+                </a>
+            </nav>
+        </div>
+    </div>
+
+</div>
